@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Gris | Contact</title>
+    <meta name="description" content="Café Gris is more than a café. It’s a gentle pause in your day. A place where you can arrive without rushing, work without noise, and connect without pressure.">
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="Logo description">
+      </a>      <div class="btn-links">
+      <div class="btn-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">About Us</a>
+        <a href="contact.html" id="contact">Contact</a>
+      </div>
+    </nav>
+    <div class = "form-wrapper">
+    <div class="form-container">
+      <h2>Contact Form</h2>
+      <form id = "form">
+        <label for="firstName">First Name: </label>
+        <input type = "text" id = "firstName" name = "firstName" placeholder = "Enter your first name"> </input>
+        
+        <label for="lastname">Surname: </label>
+        <input type = "text" id = "lastName" name = "lastName" placeholder = "Enter your last name"> </input>
+
+        <label for="email">Email: </label>
+        <input type = "email" id = "email" name = "email" placeholder = "name@example.com"> </input>
+
+        <label for="bio">Message</label>
+        <textarea name="bio" id="bio" placeholder="Tell us about yourself..."></textarea>
+        
+        <span></span>    
+        <button type="submit"> Submit </button>
+      </form>
+      <p>We’d love to hear from you. <br> Send us a message!</p>
+    </div>
+    <div class = "right-side">
+      <img src="contactimages/Ad.jpg" alt="advertisement" id="ad">
+      <div class = "text-container">
+        <div class="icon-group">
+          <img src="contactimages/locationlogo.png" id="loc">
+          <p>25 Matino St. Teachers Village<br>
+            West Diliman, Quezon City,<br>
+            Philippines, 1101
+          </p>
+        </div>
+        <div class="icon-group">
+          <img src="contactimages/phonelogo.png" id="phonelogo">
+          <p>0976 270 4930</p>
+        </div>
+      </div> 
+      <div class="text-container">
+        <div class="icon-group">
+          <img src="contactimages/emaillogo.png" id="symbol">
+          <p>cafegrisph@gmail.com</p>
+          
+          <div>
+            <div class="social-wrapper">
+              <p class="follow-text">Follow Us On:</p>
+              <div class="soc-row">
+                <div class="link1">
+                  <a href="https://www.facebook.com/cafegrisph" target="_blank">
+                    <img src="img/fb.png" class="fb" alt="Facebook icon" />
+                  </a>
+                  <a href="https://www.facebook.com/cafegrisph" target="_blank"></a>
+                </div>
+            
+                <div class="link2">
+                  <a href="https://www.instagram.com/cafegrisph" target="_blank">
+                    <img src="img/insta.png" class="insta" alt="Instagram icon" />
+                  </a>
+                  <a href="https://www.instagram.com/cafegrisph" target="_blank"></a>
+                </div>
+            
+                <div class="link3">
+                  <a href="https://www.tiktok.com/@cafe.gris" target="_blank">
+                    <img src="img/tt.png" class="tt" alt="TikTok icon" />
+                  </a>
+                  <a href="https://www.tiktok.com/@cafe.gris" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    
+    </div>
+  
+  </div>
+    
+  <script>
+    const form = document.querySelector ("#form");
+    const namePattern = /^[A-Z][a-z]+$/;
+    const bioPattern = /^.{5,50}$/;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const firstName = document.getElementById("firstName");
+
+      form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      
+      let result1 = namePattern.test(form.firstName.value);
+      let result2 = namePattern.test(form.lastName.value);
+      let result3 = bioPattern.test(form.bio.value);
+      let message = document.querySelector("span");
+
+
+      console.log(event);
+      console.log(form.firstName.value);
+      console.log(form.lastName.value);
+      console.log(form.bio.value);
+     
+      if(result1 && result2 && result3){
+        message.setAttribute("class", "success");
+        message.innerHTML = "Submitted successfully";
+      } 
+      else{
+        message.setAttribute("class", "error");
+        message.innerHTML = "Please check your input";
+      }
+
+      console.log(result1);
+      console.log(result2);
+      console.log(result3);
+
+    })
+
+      firstName.addEventListener("keyup", (event) => {
+          console.log(event);
+          let fNameResult = namePattern.test(event.target.value);
+          
+          if (fNameResult) {
+          form.firstName.setAttribute("class", "accepted");
+          form.firstName.style.border = "2px solid green"; 
+          } 
+          else {
+          form.firstName.setAttribute("class", "rejected"); 
+          form.firstName.style.border = "2px solid red";
+          }
+      });
+
+      lastName.addEventListener("keyup", (event) => {
+          console.log(event);
+          let lNameResult = namePattern.test(event.target.value);
+          
+          if (lNameResult) {
+          form.lastName.setAttribute("class", "accepted");
+          form.lastName.style.border = "2px solid green"; 
+          } 
+          else {
+          form.lastName.setAttribute("class", "rejected"); 
+          form.lastName.style.border = "2px solid red";
+          }
+      });
+
+      bio.addEventListener("keyup", (event) => {
+          console.log(event);
+          let message = bioPattern.test(event.target.value);
+          
+          if (message) {
+          form.bio.setAttribute("class", "accepted");
+          form.bio.style.border = "2px solid green"; 
+          } 
+          else {
+          form.bio.setAttribute("class", "rejected"); 
+          form.bio.style.border = "2px solid red";
+          }
+      });
+
+      email.addEventListener("keyup", (event) => {
+          console.log(event);
+          let nameEmail = emailPattern.test(event.target.value);
+          
+          if (nameEmail) {
+          form.email.setAttribute("class", "accepted");
+          form.email.style.border = "2px solid green"; 
+          } 
+          else {
+          form.email.setAttribute("class", "rejected"); 
+          form.email.style.border = "2px solid red";
+          }
+      });
+
+
+  </script>
+  </body>
+</html>

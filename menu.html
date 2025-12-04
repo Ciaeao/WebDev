@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cafe Gris | Menu</title>
+    <meta name="description" content="Café Gris is more than a café. It’s a gentle pause in your day. A place where you can arrive without rushing, work without noise, and connect without pressure.">
+
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="Logo description" />
+      </a>
+      <div class="btn-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="gallery.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="top">
+      <img src="img/mpage.png" class="mpage" alt="" />
+      <div class="top-left">
+        <h1>Coffee <i>n.</i></h1>
+        <br />
+        <ol>
+          <li>
+            A dark magical substance that turns “go away” in to “good morning,
+            honey!”
+          </li>
+          <br />
+          <li>Creator of motivation, maintainer of sanity.</li>
+          <br />
+
+          <li>Best consumed in the morning before being spoken to.</li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="matcha">
+      <div class="text-content">
+        <h2>NEW!</h2>
+        <p>Matcha Ichigo</p>
+      </div>
+
+      <div class="image-content">
+        <img src="img/drink4.jpg" class="drink4" alt="Matcha Drink" />
+      </div>
+    </section>
+
+    <header class="menu-header">
+      <h2>DISCOVER OUR MENU</h2>
+    </header>
+
+    <section class="menu-gallery">
+      <div class="item"><img src="img/cake2.jpg" alt="Cake" /></div>
+      <div class="item"><img src="img/drink3.jpg" alt="Coffee" /></div>
+      <div class="item"><img src="img/cupcakes.jpg" alt="Cupcakes" /></div>
+      <div class="item">
+        <img src="img/rainbow_cake.jpg" alt="Rainbow Cake" />
+      </div>
+    </section>
+
+    <section class="collection-section">
+      <div class="section-title">
+        <h2>CHRISTMAS COLLECTION</h2>
+        <h3>LIMITED EDITION TREATS</h3>
+      </div>
+
+      <div class="product-grid"></div>
+    </section>
+
+    <div class="coffee-menu-wrapper">
+      <h2 class="coffee-title">Coffee Picks</h2>
+
+      <div class="coffee-content">
+        <div class="coffee-image">
+          <img src="img/drink2.jpg" alt="Iced Coffee" />
+        </div>
+        <div class="coffee-list">
+          <div class="coffee-grid" id="coffeeGrid"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="coffee-menu-wrapper"
+      style="margin-top: 50px; background-color: transparent"
+    >
+      <h2 class="coffee-title">Non-Coffee & Coolers</h2>
+
+      <div class="coffee-content">
+        <div class="coffee-image">
+          <img src="img/drink.jpg" alt="Mango Passion Cooler" />
+        </div>
+
+        <div class="coffee-list">
+          <div class="coffee-grid" id="nonCoffeeGrid"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="coffee-menu-wrapper" style="margin-top: 50px">
+      <div class="coffee-content">
+        <div class="coffee-list">
+          <div class="menu-row">
+            <span class="menu-name">Espresso Shot</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱30 / single shot</span>
+          </div>
+          <span class="menu-desc"></span>
+          <div class="menu-row">
+            <span class="menu-name">Sauces & Syrups</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱10 / pump</span>
+          </div>
+          <span class="menu-desc"></span>
+
+          <div class="menu-row">
+            <span class="menu-name">Oat Milk</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱20 / 2oz</span>
+          </div>
+          <span class="menu-desc"></span>
+
+          <div class="menu-row">
+            <span class="menu-name">Oat Milk Substitute</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱40</span>
+          </div>
+        </div>
+
+        <div class="coffee-image" style="flex: 0 0 20%">
+          <div class="addons-title-wrapper">
+            <h2 class="addons-big-text">ADD-ONS</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="coffee-menu-wrapper" style="background-color: transparent">
+      <div class="coffee-content">
+        <div class="coffee-list">
+          <h2
+            class="coffee-title"
+            style="text-align: left; margin-bottom: 30px"
+          >
+            Savory Selections
+          </h2>
+
+          <div class="menu-row">
+            <span class="menu-name">Cheesy Baked Mac</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱175</span>
+          </div>
+          <span class="menu-desc">served with garlic bread</span>
+
+          <div class="menu-row">
+            <span class="menu-name">Carbonara</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱175</span>
+          </div>
+          <span class="menu-desc">served with garlic bread</span>
+
+          <div class="menu-row">
+            <span class="menu-name">Truffle Bacon Sandwich</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱175</span>
+          </div>
+          <span class="menu-desc">paired with kamote chips</span>
+
+          <div class="menu-row">
+            <span class="menu-name">Tuna Melt Sandwich</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱175</span>
+          </div>
+          <span class="menu-desc">paired with kamote chips</span>
+
+          <div class="menu-row">
+            <span class="menu-name">Grilled Cheese</span>
+            <span class="menu-dots"></span>
+            <span class="menu-price">₱175</span>
+          </div>
+          <span class="menu-desc">paired with kamote chips</span>
+        </div>
+
+        <div class="coffee-image">
+          <img src="img/savory.jpg" alt="Savory Sandwiches" />
+        </div>
+      </div>
+    </div>
+
+    <div class="cut"><hr /></div>
+    <div class="bottom">
+      <div class="b-half">
+        <div class="sm1">
+          <div class="smh1">
+            <h2 class="und-q">QUEZON CITY</h2>
+            <p>
+              25 Matino St. Teachers Village West Diliman, Quezon City,
+              Philippines, 1101
+            </p>
+          </div>
+        </div>
+        <div class="smh2"></div>
+        <a class="sh-mn" href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="sm2">
+        <div class="smb1">
+          <h3><i>Life is a latte better with coffee.</i></h3>
+        </div>
+        <div class="smb2">
+          <div class="link1">
+            <a
+              href="https://www.facebook.com/cafegrisph"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/fb.png" class="fb" alt="Facebook icon" />
+            </a>
+            <a href="https://www.facebook.com/cafegrisph" target="_blank"
+              >Cafe Gris</a
+            >
+          </div>
+          <div class="link2">
+            <a
+              href="https://www.instagram.com/cafegrisph?igsh=N2F2cWRnY3k1b2Nu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="img/insta.png"
+                class="insta"
+                target="_blank"
+                alt="Instagram icon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/cafegrisph?igsh=N2F2cWRnY3k1b2Nu"
+              target="_blank"
+              >cafegrisph</a
+            >
+          </div>
+          <div class="link3">
+            <a
+              href="https://www.tiktok.com/@cafe.gris?_r=1&_t=ZS-91snrZa3jr2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/tt.png" class="tt" alt="TikTok icon" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@cafe.gris?_r=1&_t=ZS-91snrZa3jr2"
+              target="_blank"
+              >cafe.gris</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const coffeeMenu = [
+        { name: "Espresso", hot: "₱65", iced: "" },
+        { name: "Caffe Americano", hot: "₱105", iced: "₱105" },
+        { name: "Caffe Latte", hot: "₱125", iced: "₱125" },
+        { name: "Cappuccino", hot: "₱125", iced: "₱125" },
+        { name: "Caramel Macchiato", hot: "₱145", iced: "₱145" },
+        { name: "Caffe Mocha", hot: "₱145", iced: "₱145" },
+        { name: "White Mocha", hot: "₱145", iced: "₱145" },
+        { name: "Toffee Nut Latte", hot: "₱145", iced: "₱145" },
+        { name: "Spanish Latte", hot: "₱145", iced: "₱145" },
+        { name: "Salted Caramel Latte", hot: "₱145", iced: "₱145" },
+        { name: "Hazelnut Mocha", hot: "₱145", iced: "₱145" },
+        { name: "Hazelnut White Mocha", hot: "₱145", iced: "₱145" },
+        { name: "Caramel Oatmilk Latte", hot: "₱185", iced: "₱185" },
+        { name: "Hazelnut Oatmilk Macchiato", hot: "₱185", iced: "₱185" },
+      ];
+
+      const nonCoffeeMenu = [
+        { name: "Peach Iced Tea", hot: "", iced: "₱95" },
+        { name: "Strawberry Fizzle", hot: "", iced: "₱125" },
+        { name: "Blueberry Lemonade", hot: "", iced: "₱125" },
+        { name: "Mango Passion Fruit Lemonade", hot: "", iced: "₱125" },
+        { name: "Strawberry Milk", hot: "", iced: "₱145" },
+        { name: "Matcha Latte", hot: "₱145", iced: "₱145" },
+        { name: "Gris Chocolate", hot: "₱145", iced: "₱155" },
+        { name: "Matcha Ichigo", hot: "", iced: "₱155" },
+      ];
+
+      const christmasCollection = [
+        {
+          name: "MACARON WREATH",
+          desc: "Sixteen dark chocolate French macarons with chocolate leaves, chocolate berries with fondant flowers and stars.",
+          price: "₱ 850",
+          image: "img/xmas_1.png",
+        },
+        {
+          name: "CHOCOLATE TREE",
+          desc: "Dark chocolate discs with corn flakes, cashew, almonds, walnuts, raisins, dates, strawberries.",
+          price: "₱ 750",
+          image: "img/xmas_2.png",
+        },
+        {
+          name: "MINI MACARON WREATH",
+          desc: "Seven dark chocolate French macarons with chocolate leaves, chocolate berries with fondant flowers and stars.",
+          price: "₱ 450",
+          image: "img/xmas_3.png",
+        },
+        {
+          name: "BROWNIE POPS",
+          desc: "Signature double chocolate brownies topped with white chocolate sprinkles",
+          price: "₱ 95",
+          image: "img/xmas_4.png",
+        },
+        {
+          name: "CHOCOLATE CRINKLES",
+          desc: "Mini chewy chocolate crinkles PACK OF 8",
+          price: "₱ 125",
+          image: "img/xmas_5.png",
+        },
+        {
+          name: "COOKIE KIT",
+          desc: "Three sugar cookies, royal icing, marshmallows, chocolate chips, candy decorations.",
+          price: "₱ 250",
+          image: "img/xmas_6.png",
+        },
+      ];
+
+      const grid = document.getElementById("coffeeGrid");
+
+      grid.innerHTML = `
+        <div></div>
+        <div class="grid-header">HOT (12oz)</div>
+        <div class="grid-header">ICED (16oz)</div>
+      `;
+
+      coffeeMenu.forEach((item) => {
+        grid.innerHTML += `
+          <div class="item-name">${item.name}</div>
+          <div class="item-price">${item.hot || ""}</div>
+          <div class="item-price">${item.iced || ""}</div>
+        `;
+      });
+
+      const nonCoffeeGrid = document.getElementById("nonCoffeeGrid");
+
+      nonCoffeeGrid.innerHTML = `
+        <div></div>
+        <div class="grid-header">HOT (12oz)</div>
+        <div class="grid-header">ICED (16oz)</div>
+      `;
+
+      nonCoffeeMenu.forEach((item) => {
+        nonCoffeeGrid.innerHTML += `
+          <div class="item-name">${item.name}</div>
+          <div class="item-price">${item.hot || ""}</div>
+          <div class="item-price">${item.iced || ""}</div>
+        `;
+      });
+
+      const collectionContainer = document.querySelector(".product-grid");
+
+      christmasCollection.forEach((item) => {
+        collectionContainer.innerHTML += `
+      <div class="product-card">
+        <div class="image-box">
+          <img src="${item.image}" alt="${item.name}" />
+        </div>
+        <div class="details">
+          <h4>${item.name}</h4>
+          <p>${item.desc}</p>
+          <span class="price">${item.price}</span>
+        </div>
+      </div>
+       `;
+      });
+    </script>
+  </body>
+</html>
